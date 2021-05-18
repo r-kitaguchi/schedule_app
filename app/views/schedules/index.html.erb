@@ -21,10 +21,10 @@
   <tr>
     <td><%= schedule.id %></td>
     <td><%= schedule.title %></td>
-    <td><%= schedule.start_date %></td>
-    <td><%= schedule.end_date %></td>
+    <td><%= l schedule.start_date %></td>
+    <td><%= l schedule.end_date %></td>
     <td><%= render "shared/all_day", obj: schedule %></td>
-    <td><%= schedule.updated_at.to_s(:datetime_jp) %></td>
+    <td><%= l schedule.updated_at %></td>
     <td>
       <%= link_to "確認", schedule %>
     </td>
