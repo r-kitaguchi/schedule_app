@@ -1,0 +1,82 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  min-height: 100vh;
+}
+header,footer{
+  background-color: #D36135;
+  padding: 10px;
+}
+main{
+  margin: 30px;
+}
+footer{
+  margin-top: auto;
+}
+.notice{
+  background-color: #613DC1;
+  color: #fff;
+  margin: 0 -30px 10px;
+  padding: 5px 30px;
+}
+table{
+  border-collapse: collapse;
+}
+table th{
+  background-color: #A9BBCC;
+  border: 1px solid black;
+  margin: 0;
+  padding: 20px;
+}
+table td{
+  border: 1px solid black;
+  padding: 10px 20px;
+  text-align: center;
+}
+.title, .start_date, .end_date{
+  height: 40px;
+}
+.schedule_memo{
+  height: 200px;
+}
+.title, .start_date, .end_date, .schedule_memo{
+  font-size: 16px;
+  width: 400px;
+}
+.all_day_checkbox{
+  display: block;
+  margin: 10px auto;
+  transform: scale(1.5);
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  line-height: 40px;
+}
+.schedule_details_table{
+  height: 200px;
+  overflow-wrap: break-word;
+  table-layout: fixed;
+  width: 500px;
+}
+.schedule_details_table th{
+  width: 30%;
+}
+.error_message{
+  border: 5px solid #f8e042;
+  background-color: #E0CA3C;
+  padding-left: 10px;
+  width: 400px;
+}
+.submit_button{
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.submit_button:hover{
+  background-color: #fff;
+}

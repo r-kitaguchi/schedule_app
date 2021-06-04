@@ -1,0 +1,26 @@
+<h2>スケジュール詳細</h2>
+
+<table class= "schedule_details_table">
+  <tr>
+    <th>タイトル</th>
+    <td><%= @schedule.title %></td>
+  </tr>
+  <tr>
+    <th>開始日</th>
+    <td><%= @schedule.start_date %></td>
+  </tr>
+  <tr>
+    <th>終了日</th>
+    <td><%= @schedule.end_date %></td>
+  </tr>
+  <tr>
+    <th>終日</th>
+    <td><%= render "shared/all_day", obj: @schedule %></td>
+  </tr>
+  <tr>
+    <th>メモ</th>
+    <td class= ""><%= @schedule.memo %></td>
+  </tr>
+</table>
+
+<p><%= link_to "スケジュール一覧へ戻る", :schedules %></p>
